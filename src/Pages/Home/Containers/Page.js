@@ -7,11 +7,9 @@ import { getCounter } from "Pages/Home/utils/selectors/counter";
 import { addAmount } from "Pages/Home/utils/thunks/add";
 import { subtractAmount } from "Pages/Home/utils/thunks/subtract";
 
-const mapStateToProps = (state, props) => {
-  return {
-    getCounter: getCounter(state, props)
-  };
-};
+const mapStateToProps = (state, props) => ({
+  getCounter: getCounter(state, props)
+});
 
 const mapDispatchToProps = dispatch => ({
   add: amount => dispatch(addAmount(amount)),
