@@ -2,8 +2,8 @@ import React from "react";
 
 import { Route } from "react-router-dom";
 
-import Home from "Pages/Home/Containers/Page";
-import About from "Pages/About/Containers/Page";
+import Home from "Pages/Home";
+import About from "Pages/About";
 
 const router = () => (
   <div>
