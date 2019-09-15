@@ -1,9 +1,9 @@
 import React from "react";
 
-const Home = ({ getCounter, add, subtract }) => (
+const Home = ({ counter, add, subtract }) => (
   <div>
     <div>Home</div>
-    <div>{getCounter}</div>
+    <div>{counter}</div>
     <span onClick={() => subtract(1)}>-</span>
     <span onClick={() => add(1)}>+</span>
   </div>
